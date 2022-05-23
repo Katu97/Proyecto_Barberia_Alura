@@ -87,17 +87,13 @@ footer{
     text-align: center;
     background: url(imagenes/bg.jpg);
     padding:40px;
+    margin: 0;
 }
 
 .copyright{
     color:#FFFFFF;
     font-size: 13px;
     margin:20px;
-}
-
-main{
-    width: 940px;
-    margin: 0 auto; /* Se centraliza */
 }
 
 form{
@@ -147,7 +143,7 @@ table{
 
 thead{
     background: #555555;
-    color: #FFFFFF;
+    color: #FEFEFE;
     font-weight: bold;
 }
 
@@ -169,10 +165,38 @@ td, th{
     clear: left; /*Cualquier configuracion que venga de la izquierda despues del titulo que la limpie*/
 }
 
+/*.titulo-principal::first-letter{
+    font-weight: bold;
+}
+
+.titulo-principal::before{
+    content: "[";
+}
+
+.titulo-principal::after{
+    content: "]";
+}
+
+p::first-line{
+    font-style: italic;
+}*/
+
 .utensilios{
     width: 120px;
     float: left;
     margin-right: 20px;
+}
+
+.principal{
+    background: #FEFEFE;
+    padding: 3em 0;
+    width: 100vw;
+    margin: 0 auto; /* Se centraliza */
+}
+
+.principal-contenido{
+    width: 940px;
+    margin: 0 auto;
 }
 
 .principal p{
@@ -190,6 +214,10 @@ td, th{
 
 .mapa{
     padding: 3em 0;
+    width: 100vw;
+    margin: 0 auto; /* Se centraliza */
+    background: linear-gradient(#FEFEFE, #888888);
+    *background: linear-gradient(45deg, orange 50%, blue, red, pink);
 }
 
 .mapa p{
@@ -197,7 +225,46 @@ td, th{
     text-align: center;
 }
 
-.imagenDiferenciales{
+.mapa-contenido{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.diferenciales{
+    padding: 3em 0;
+    background: #888888;
+    width: 100vw;
+    margin: 0 auto; /* Se centraliza */
+}
+
+.contenido-diferenciales{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-diferenciales{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.items{
+    line-height: 1.5;
+}
+
+.items:first-child{
+    font-weight: bold;
+}
+
+.items::before{
+    content: "★ "; /*Sacado de la pagina de unicode*/
+}
+
+/*.items:nth-child(3){
+    font-weight: bold;
+} Para pintar al 3ero, o 2n para los pares, o 4 para el cuarto*/
+
+.imagen-diferenciales{
     width: 60%;
 }
 
